@@ -24,9 +24,9 @@ body {
 }
 
 .container {
-	max-width: 1100px;
+	max-width: 1440px;
 	margin: 0 auto;
-	padding: 80px 24px;
+	padding: 40px 24px;
 }
 
 h1,
@@ -80,24 +80,37 @@ section {
 .hero {
 	background: var(--bg-light);
 }
-
+.hero .logo{
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 40px;
+	flex-wrap: wrap;
+}
+.hero .logo img{
+    padding: 10px 0 0 24px;
+	width: 250px;
+    align-items: start;
+    justify-content: start;
+}
 .hero .container {
 	display: flex;
 	align-items: center;
 	gap: 40px;
 	flex-wrap: wrap;
-	padding: 60px 24px;
+	padding: 10px 24px;
 }
 
 .hero-text {
 	flex: 1;
 	min-width: 320px;
+    width: 360px;
 	text-align: left;
+    font-size: 28px;
 }
 
 .hero h1 {
-	font-size: clamp(2rem, 5vw, 3rem);
-	line-height: 1.4;
+	font-size: clamp(1.5rem, 5vw, 2.2rem);
+	line-height: 1.5;
 	color: var(--text-dark);
 }
 
@@ -146,7 +159,7 @@ section {
 	width: 100%;
 	max-width: 520px;
 	/* katta ko'rinish */
-	transform: rotate(1.5deg);
+	/* transform: rotate(1.5deg); */
 	filter: drop-shadow(0 18px 40px rgba(0, 0, 0, .18));
 	border-radius: 0;
 	/* transparent rasmda radius shart emas */
@@ -199,9 +212,9 @@ section {
 .step-item {
 	display: flex;
 	align-items: center;
-	gap: 36px;
+	gap: 20px;
 	/* ixchamroq */
-	margin-bottom: 56px;
+	margin-bottom: 20px;
 	border: 1px solid var(--border-color);
 	border-radius: 16px;
 	padding: 24px;
@@ -220,19 +233,19 @@ section {
 .step-content {
 	font-size: 16px;
 	flex: 1;
-	min-width: 330px;
+	/* min-width: 330px; */
 }
 
 .step-image img {
-	width: 260px;
-	max-width: 100%;
+	width: 330px;
+	/* max-width: 100%; */
 	border-radius: 12px;
 	display: block;
 	margin: 0 auto;
 }
 
 .step-number {
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	font-weight: 700;
 	color: var(--primary-orange);
 	display: inline-block;
@@ -254,14 +267,14 @@ section {
 
 .reasons-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	gap: 40px;
 }
 
 .reason-card {
 	background: var(--white);
 	border-radius: 16px;
-	padding: 35px;
+	padding: 25px;
 	text-align: center;
 	border: 1px solid var(--border-color);
 	transition: all .3s ease;
@@ -274,13 +287,25 @@ section {
 }
 
 .reason-card .icon-image {
-	width: 132px;
-	height: 132px;
+	width: 200px;
+	height: 200px;
 	margin: 0 auto 20px;
 }
 
 .reason-card h3 {
 	color: var(--text-dark);
+}
+.why-shigotonavi-title{
+    font-size: 2rem;
+	font-weight: 600;
+	margin-top: 0;
+	letter-spacing: .05em;
+}
+.why-shigotonavi-title-p{
+    font-size: 20px;
+	font-weight: 400;
+	margin-top: 0;
+	letter-spacing: .05em;
 }
 
 /* -------- Privacy -------- */
@@ -301,14 +326,14 @@ section {
 }
 
 .privacy-text h3 {
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	margin: 0 0 8px;
 	color: #333;
 }
 
 .privacy-text p {
 	margin: 0;
-	font-size: .95rem;
+	font-size: 1rem;
 	color: #666;
 }
 
@@ -408,17 +433,17 @@ section {
 /* -------- Mobile -------- */
 @media (max-width:480px) {
 	.container {
-		padding: 40px 16px;
+		padding: 20px 16px;
 	}
 
 	.hero .container {
 		flex-direction: column-reverse;
 		text-align: center;
-		padding: 40px 16px;
+		padding: 20px 16px;
 	}
 
 	.hero-text {
-		text-align: center;
+		text-align: start;
 		width: 100%;
 		min-width: auto;
 		
@@ -426,7 +451,7 @@ section {
 
 	.hero-image img {
 		max-width: 380px;
-		transform: rotate(1deg);
+		/* transform: rotate(1deg); */
 	}
 
 	.hero h1 {
@@ -477,7 +502,7 @@ section {
 
 	.section-title2 {
 		display: block;
-		font-size: 2.1rem;
+		font-size: 1.8rem;
 		margin-bottom: 40px;
 	}
 
@@ -509,7 +534,7 @@ section {
 	}
 
 	.step-image img {
-		max-width: 220px;
+		max-width: 280px;
 	}
 
 	.step-title {
@@ -550,17 +575,17 @@ section {
 	}
 
 	.reason-card .icon-image {
-		width: 96px;
-		height: 96px;
+		width: 140px;
+		height: 140px;
 		margin-bottom: 15px;
 	}
 
 	.reason-card h3 {
-		font-size: 1.18rem;
+		font-size: 1.5rem;
 	}
 
 	.reason-card p {
-		font-size: .95rem;
+		font-size: 1rem;
 	}
 
 	.privacy-block {
@@ -570,6 +595,7 @@ section {
 	.privacy-block-mobile {
 		display: block;
 		text-align: center;
+        margin-top: 10px;
 		padding: 20px;
 		border: 1px solid var(--border-color);
 		border-radius: 12px;
@@ -583,15 +609,15 @@ section {
 	}
 
 	.privacy-block-mobile .privacy-text h3 {
-		font-size: 1rem;
+		font-size: 1.5rem;
 		line-height: 1.4;
 		color: #333;
 		margin: 0 0 8px;
 	}
 
 	.privacy-block-mobile .privacy-text p {
-		font-size: .85rem;
-		line-height: 1.5;
+		font-size: 1rem;
+		line-height: 2;
 		color: #666;
 		margin: 0;
 	}
