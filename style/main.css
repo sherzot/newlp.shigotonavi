@@ -576,7 +576,7 @@ section {
 
 	.reason-card .icon-image {
 		width: 140px;
-		height: 140px;
+		/* height: 140px; */
 		margin-bottom: 15px;
 	}
 
